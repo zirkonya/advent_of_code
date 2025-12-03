@@ -4,4 +4,13 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+fancy-regex = "0.16.2"
 logos = "0.15.1"
+rayon = "1.11.0"
+
+[lints.clippy]
+pedantic = "warn"
+all = "warn"
+
+[profile.release]
+opt-level = "z"
